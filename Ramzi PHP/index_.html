@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ramzi Admin</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<form method="post">
+		<p>Выбериет действие:</p>
+		<ol>
+			<li><input type="radio" name="action" checked>Блюдо</li>
+			<li><input type="radio" name="action">Ингридиент</li>
+			<li><input type="radio" name="action">Ингридиенты в блюдах (запишите ингридиенты в дополнительном поле через ";")</li>
+		</ol>
+
+		<p>Выберите тип действие:</p>
+		<input type="radio" name="actionType" value="I" checked>Добавить
+		<input type="radio" name="actionType" value="D">Удалить
+
+		<p>Запишите название блюда или ингридиента:</p>
+		<input type="text" name="objName" style="width: 50%;">
+		<p>Дополнительное поле:</p>
+		<textarea name="textAr" style="width: 50%;"></textarea>
+		<p></p>
+		<input type="button">
+	</form>
+
+	<div style="width: 24%; height: 60ch;display: inline-block;" >
+		<p>Таблица блюд:</p>
+		<table border="1" style="width: 100%;">
+			<tbody>
+				<tr style="background-color: rgb(197, 197, 197);">
+					<td>№</td>
+					<td>Название блюда</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Яичница</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div style="width: 24%; height: 60ch; display: inline-block;">
+		<p>Таблица ингридиентов:</p>
+		<table border="1" style="width: 100%;">
+			<tbody>
+				<tr style="background-color: rgb(197, 197, 197);">
+					<td>№</td>
+					<td>Название ингридиента</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Яйца</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div style="width: 49%; height: 60ch; display: inline-block;">
+		<p>Таблица ингридиентов в блюдах:</p>
+		<table border="1" style="width: 100%;">
+			<tbody>
+				<tr style="background-color: rgb(197, 197, 197);">
+					<td>№</td>
+					<td>Название блюда</td>
+					<td>Перечисление ингридиентов</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Яичница</td>
+					<td>
+						<ol>
+							<li>Яйца</li>
+							<li>Вода</li>
+							<li>Сахар</li>
+						</ol>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
