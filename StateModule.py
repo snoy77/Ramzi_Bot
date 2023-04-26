@@ -1,7 +1,7 @@
 import DataBaseWorker as DBW
 
 WordsForState_0 = [ 'отмена', 'нет']
-StateForState_0 = [1]
+StateForState_0 = [1, 5]
 
 WordsForState_1 = [
 'добавить продукт',
